@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转</title>
+    <script type="text/javascript">
+        //页面加载事件
+        window.onload = function () {
+            var time = 5;
+            var secondEle = document.getElementById("second");
+            var timer = setInterval(function () {
+            secondEle.innerHTML = time;
+            time--;
+            if (time==0){
+                clearInterval(timer);
+                location.href="http://www.baidu.com";
+            }
+        },1000)
+        }
+    </script>
+</head>
+<body>
+    恭喜你注册成功，<span style="color: red" id="second">5</span>秒后跳转，如不跳转请点击<a href="http://www.baidu.com">这里</a>！
+</body>
+</html>

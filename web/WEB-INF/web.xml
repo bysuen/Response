@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>refrsh</servlet-name>
+        <servlet-class>Header.RefrshServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>refrsh</servlet-name>
+        <url-pattern>/refrsh</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>redirect</servlet-name>
+        <servlet-class>Header.Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirect</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>redirect2</servlet-name>
+        <servlet-class>Header.Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirect2</servlet-name>
+        <url-pattern>/redirect2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>context</servlet-name>
+        <servlet-class>content.TextServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>context</servlet-name>
+        <url-pattern>/context</url-pattern>
+    </servlet-mapping>
+</web-app>
